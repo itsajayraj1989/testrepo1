@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "rg" {
   location = var.rg_location
 }
 
-resource "azurerm_key_vault" "kv02" {
+resource "azurerm_key_vault" "kv01" {
   name                        = var.keyvault_name
   location                    = azurerm_resource_group.rg.location
   resource_group_name         = azurerm_resource_group.rg.name
